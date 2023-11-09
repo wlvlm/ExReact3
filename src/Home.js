@@ -1,5 +1,4 @@
 import Article from './Article.js'
-import { lastThreeArticles } from './Article.js';
 
 const articles = [
     {
@@ -62,11 +61,9 @@ const articles = [
       isPublished: false,
     },
   ]; 
-  
+
   const articlesPublished = articles.filter((product) => product.isPublished == true);
   const lastThreeArticles = articlesPublished.slice(-3);
-
-console.log(lastThreeArticles)
 
 function Home(){
     return(
